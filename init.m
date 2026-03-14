@@ -78,7 +78,7 @@ p0_all = repmat(q_start, 1, num_agents) + delta;
 v0_all = zeros(3, num_agents); % 初始速度全为 0
 
 % ----------------- APF 控制系数 (参考 Pan 论文的设定) -----------------
-k_t = 0.1;      % 目标引力增益 (k_t)
+k_t = 1;      % 目标引力增益 (k_t)
 k_a = 100;     % 编队引斥力增益 (k_a)
 k_r = 50;    % 障碍物斥力增益 (k_r) -> 对应 Ge & Cui 公式中的 eta
 k_e = 50;     % 局部极小值旋转力增益 (k_e)
